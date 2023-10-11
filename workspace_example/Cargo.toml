@@ -1,0 +1,22 @@
+[workspace]
+members = ["crates/*"]
+resolver = "2"
+
+[workspace.package]
+version = "0.0.0"
+authors = ["Guillaume Dallenne <guillaume.dallenne@stormshield.eu>"]
+edition = "2021"
+license = "Apache-2.0"
+publish = false
+
+[workspace.metadata.ft]
+targets = [
+    "aarch64-unknown-linux-gnu",
+    "i686-unknown-linux-gnu",
+    "x86_64-unknown-linux-gnu",
+    "i686-pc-windows-gnu",
+    "i686-pc-windows-msvc",
+    "x86_64-pc-windows-gnu",
+    "x86_64-pc-windows-msvc",
+    "x86_64-apple-darwin",
+]
