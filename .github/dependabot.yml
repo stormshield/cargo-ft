@@ -7,6 +7,7 @@ updates:
       interval: monthly
     allow:
       - dependency-type: all
+    open-pull-requests-limit: 30
 
   - package-ecosystem: github-actions
     directory: /
