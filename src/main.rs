@@ -59,17 +59,12 @@ fn main() -> Result<ExitCode, RuntimeError> {
     .into_iter()
     .flatten();
 
-    let cargo_metadata_options = ["--no-deps"]
-        .into_iter()
-        .chain(manifest_options.clone())
-        .map(|s| s.into())
-        .collect::<Vec<_>>();
-
     eprintln!("{:>12} metadata", note("Collecting"));
     let metadata = ft_args
         .manifest
         .metadata()
-        .other_options(cargo_metadata_options)
+        .no_deps()
+        .other_options(manifest_options.clone().map(ToOwned::to_owned).collect::<Vec<_>>())
         .verbose(true)
         .exec()
         .change_context(context)
