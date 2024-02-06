@@ -8,7 +8,7 @@ include = ["/src/", "/build.rs", "/LICENSE", "/NOTICE"]
 keywords = ["cli", "cargo", "filter", "target"]
 license = "Apache-2.0"
 repository = "https://github.com/stormshield/cargo-ft"
-rust-version = "1.70" # Sync this value with the CI workflow
+rust-version = "1.72" # Sync this value with the CI workflow
 description = "A cargo extension for specifying supported targets for a crate"
 
 [dependencies]
@@ -17,7 +17,7 @@ anstyle = "1.0.5"
 cargo-config2 = "0.1.18"
 cargo_metadata = "0.18.1"
 clap = { version = "4.4.15", features = ["derive"] }
-clap-cargo = { version = "0.13.0", features = ["cargo_metadata"] }
+clap-cargo = { version = "0.14.0", features = ["cargo_metadata"] }
 error-stack = "0.4.1"
 serde = { version = "1.0.196", features = ["derive"] }
 serde_json = "1.0.113"

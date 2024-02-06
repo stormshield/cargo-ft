@@ -63,6 +63,7 @@ fn main() -> Result<ExitCode, RuntimeError> {
     let metadata = ft_args
         .manifest
         .metadata()
+        .no_deps()
         .other_options(manifest_options.clone().map(ToOwned::to_owned).collect::<Vec<_>>())
         .verbose(true)
         .exec()
