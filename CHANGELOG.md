@@ -6,6 +6,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.3](https://github.com/stormshield/cargo-ft/compare/v0.1.2...v0.1.3) - 2024-02-06
+
+### Fixed
+- use no-deps parameter in cargo-metadata ([#45](https://github.com/stormshield/cargo-ft/pull/45))
+
+### Other
+- *(deps)* bump anstyle from 1.0.5 to 1.0.6 ([#48](https://github.com/stormshield/cargo-ft/pull/48))
+- *(deps)* bump clap from 4.4.15 to 4.4.18 ([#47](https://github.com/stormshield/cargo-ft/pull/47))
+- *(deps)* bump winnow from 0.5.36 to 0.5.37 ([#46](https://github.com/stormshield/cargo-ft/pull/46))
+- *(deps)* bump anstyle from 1.0.4 to 1.0.5 ([#43](https://github.com/stormshield/cargo-ft/pull/43))
+- *(deps)* bump anstream from 0.6.5 to 0.6.11 ([#41](https://github.com/stormshield/cargo-ft/pull/41))
+- *(deps)* bump semver from 1.0.20 to 1.0.21 ([#40](https://github.com/stormshield/cargo-ft/pull/40))
+- *(deps)* bump syn from 2.0.46 to 2.0.48 ([#39](https://github.com/stormshield/cargo-ft/pull/39))
+- *(deps)* bump serde from 1.0.194 to 1.0.196 ([#38](https://github.com/stormshield/cargo-ft/pull/38))
+- *(deps)* bump serde_json from 1.0.110 to 1.0.113 ([#37](https://github.com/stormshield/cargo-ft/pull/37))
+- *(deps)* bump toml_edit from 0.21.0 to 0.21.1 ([#36](https://github.com/stormshield/cargo-ft/pull/36))
+- *(deps)* bump cargo-config2 from 0.1.17 to 0.1.18 ([#35](https://github.com/stormshield/cargo-ft/pull/35))
+- *(deps)* bump winnow from 0.5.31 to 0.5.36 ([#34](https://github.com/stormshield/cargo-ft/pull/34))
+- *(deps)* bump indexmap from 2.1.0 to 2.2.2 ([#33](https://github.com/stormshield/cargo-ft/pull/33))
+- *(deps)* bump clap from 4.4.12 to 4.4.15 ([#32](https://github.com/stormshield/cargo-ft/pull/32))
+
 ## [0.1.2](https://github.com/stormshield/cargo-ft/compare/v0.1.1...v0.1.2) - 2024-01-02
 
 ### Other
