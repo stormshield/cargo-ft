@@ -16,7 +16,7 @@ anstream = "0.6.13"
 anstyle = "1.0.6"
 cargo-config2 = "0.1.19"
 cargo_metadata = "0.18.1"
-clap = { version = "4.5.1", features = ["derive"] }
+clap = { version = "4.5.4", features = ["derive"] }
 clap-cargo = { version = "0.14.0", features = ["cargo_metadata"] }
 error-stack = "0.4.1"
 serde = { version = "1.0.197", features = ["derive"] }
