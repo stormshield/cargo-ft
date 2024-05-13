@@ -6,6 +6,45 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0](https://github.com/stormshield/cargo-ft/compare/v0.1.3...v0.2.0) - 2024-05-13
+
+### Fixed
+- lower lint group priority ([#108](https://github.com/stormshield/cargo-ft/pull/108))
+
+### Other
+- *(deps)* bump quote from 1.0.35 to 1.0.36 ([#87](https://github.com/stormshield/cargo-ft/pull/87))
+- *(deps)* bump toml_edit from 0.22.9 to 0.22.12 ([#84](https://github.com/stormshield/cargo-ft/pull/84))
+- *(deps)* bump serde_json from 1.0.115 to 1.0.117 ([#106](https://github.com/stormshield/cargo-ft/pull/106))
+- *(deps)* bump cargo-config2 from 0.1.23 to 0.1.26 ([#92](https://github.com/stormshield/cargo-ft/pull/92))
+- *(deps)* bump thiserror from 1.0.58 to 1.0.60 ([#110](https://github.com/stormshield/cargo-ft/pull/110))
+- *(deps)* bump serde from 1.0.197 to 1.0.200 ([#90](https://github.com/stormshield/cargo-ft/pull/90))
+- *(deps)* bump windows-targets from 0.52.4 to 0.52.5 ([#101](https://github.com/stormshield/cargo-ft/pull/101))
+- *(deps)* bump cargo-platform from 0.1.7 to 0.1.8 ([#82](https://github.com/stormshield/cargo-ft/pull/82))
+- *(deps)* bump proc-macro2 from 1.0.78 to 1.0.79 ([#81](https://github.com/stormshield/cargo-ft/pull/81))
+- *(deps)* bump anyhow from 1.0.80 to 1.0.81 ([#80](https://github.com/stormshield/cargo-ft/pull/80))
+- *(deps)* bump indexmap from 2.2.5 to 2.2.6 ([#78](https://github.com/stormshield/cargo-ft/pull/78))
+- *(deps)* bump syn from 2.0.52 to 2.0.57 ([#77](https://github.com/stormshield/cargo-ft/pull/77))
+- *(deps)* bump itoa from 1.0.10 to 1.0.11 ([#75](https://github.com/stormshield/cargo-ft/pull/75))
+- *(deps)* bump memchr from 2.7.1 to 2.7.2 ([#73](https://github.com/stormshield/cargo-ft/pull/73))
+- *(deps)* bump toml_edit from 0.22.6 to 0.22.9 ([#72](https://github.com/stormshield/cargo-ft/pull/72))
+- *(deps)* bump cargo-config2 from 0.1.19 to 0.1.23 ([#83](https://github.com/stormshield/cargo-ft/pull/83))
+- *(deps)* bump serde_json from 1.0.114 to 1.0.115 ([#74](https://github.com/stormshield/cargo-ft/pull/74))
+- *(deps)* bump thiserror from 1.0.57 to 1.0.58 ([#79](https://github.com/stormshield/cargo-ft/pull/79))
+- *(deps)* bump clap from 4.5.1 to 4.5.4 ([#76](https://github.com/stormshield/cargo-ft/pull/76))
+- *(deps)* bump clap from 4.4.18 to 4.5.1 ([#53](https://github.com/stormshield/cargo-ft/pull/53))
+- [**breaking**] bump MSRV from 1.72 to 1.74 ([#71](https://github.com/stormshield/cargo-ft/pull/71))
+- *(deps)* bump syn from 2.0.48 to 2.0.52 ([#68](https://github.com/stormshield/cargo-ft/pull/68))
+- *(deps)* bump anyhow from 1.0.79 to 1.0.80 ([#67](https://github.com/stormshield/cargo-ft/pull/67))
+- *(deps)* bump serde_json from 1.0.113 to 1.0.114 ([#65](https://github.com/stormshield/cargo-ft/pull/65))
+- *(deps)* bump cargo-config2 from 0.1.18 to 0.1.19 ([#64](https://github.com/stormshield/cargo-ft/pull/64))
+- *(deps)* bump cargo-platform from 0.1.6 to 0.1.7 ([#62](https://github.com/stormshield/cargo-ft/pull/62))
+- *(deps)* bump semver from 1.0.21 to 1.0.22 ([#61](https://github.com/stormshield/cargo-ft/pull/61))
+- *(deps)* bump serde from 1.0.196 to 1.0.197 ([#60](https://github.com/stormshield/cargo-ft/pull/60))
+- *(deps)* bump indexmap from 2.2.2 to 2.2.5 ([#59](https://github.com/stormshield/cargo-ft/pull/59))
+- *(deps)* bump thiserror from 1.0.56 to 1.0.57 ([#57](https://github.com/stormshield/cargo-ft/pull/57))
+- *(deps)* bump windows-targets from 0.52.0 to 0.52.4 ([#58](https://github.com/stormshield/cargo-ft/pull/58))
+- *(deps)* bump anstream from 0.6.11 to 0.6.13 ([#50](https://github.com/stormshield/cargo-ft/pull/50))
+
 ## [0.1.3](https://github.com/stormshield/cargo-ft/compare/v0.1.2...v0.1.3) - 2024-02-06
 
 ### Fixed
