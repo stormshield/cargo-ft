@@ -14,7 +14,7 @@ description = "A cargo extension for specifying supported targets for a crate"
 [dependencies]
 anstream = "0.6.15"
 anstyle = "1.0.8"
-cargo-config2 = "0.1.26"
+cargo-config2 = "0.1.29"
 cargo_metadata = "0.18.1"
 clap = { version = "4.5.16", features = ["derive"] }
 clap-cargo = { version = "0.14.1", features = ["cargo_metadata"] }
