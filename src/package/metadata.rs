@@ -1,8 +1,8 @@
 use std::fmt;
 
-use error_stack::{report, Context, ResultExt};
+use error_stack::{Context, ResultExt, report};
 use serde::de::{MapAccess, SeqAccess};
-use serde::{de, Deserialize, Deserializer};
+use serde::{Deserialize, Deserializer, de};
 
 #[cfg(test)]
 mod tests;

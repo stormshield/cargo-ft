@@ -5,7 +5,7 @@ use std::process::{Command, ExitCode};
 use std::{env, fmt, path};
 
 use anstream::eprintln;
-use error_stack::{ensure, report, Context, Result, ResultExt};
+use error_stack::{Context, Result, ResultExt, ensure, report};
 
 use crate::cli::Cli;
 use crate::color::{note, warn};
