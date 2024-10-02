@@ -8,7 +8,7 @@ include = ["/src/", "/build.rs", "/LICENSE", "/NOTICE"]
 keywords = ["cli", "cargo", "filter", "target"]
 license = "Apache-2.0"
 repository = "https://github.com/stormshield/cargo-ft"
-rust-version = "1.74" # Sync this value with the CI workflow
+rust-version = "1.81" # Sync this value with the CI workflow
 description = "A cargo extension for specifying supported targets for a crate"
 
 [dependencies]
