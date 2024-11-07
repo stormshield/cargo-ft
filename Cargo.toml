@@ -12,7 +12,7 @@ rust-version = "1.81" # Sync this value with the CI workflow
 description = "A cargo extension for specifying supported targets for a crate"
 
 [dependencies]
-anstream = "0.6.15"
+anstream = "0.6.18"
 anstyle = "1.0.8"
 cargo-config2 = "0.1.29"
 cargo_metadata = "0.18.1"
