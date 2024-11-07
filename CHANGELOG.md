@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.1](https://github.com/stormshield/cargo-ft/compare/v0.2.0...v0.2.1) - 2024-11-07
+
+### Other
+
+- *(deps)* bump proc-macro2 from 1.0.86 to 1.0.89 ([#202](https://github.com/stormshield/cargo-ft/pull/202))
+- *(deps)* bump anstyle from 1.0.8 to 1.0.10 ([#210](https://github.com/stormshield/cargo-ft/pull/210))
+- *(deps)* bump serde_json from 1.0.128 to 1.0.132 ([#208](https://github.com/stormshield/cargo-ft/pull/208))
+- *(deps)* bump anstyle-query from 1.1.1 to 1.1.2 ([#205](https://github.com/stormshield/cargo-ft/pull/205))
+- *(deps)* bump thiserror from 1.0.64 to 1.0.68 ([#215](https://github.com/stormshield/cargo-ft/pull/215))
+- *(deps)* bump clap from 4.5.19 to 4.5.20 ([#213](https://github.com/stormshield/cargo-ft/pull/213))
+- *(deps)* bump serde from 1.0.210 to 1.0.214 ([#206](https://github.com/stormshield/cargo-ft/pull/206))
+- *(deps)* bump anstream from 0.6.15 to 0.6.18 ([#216](https://github.com/stormshield/cargo-ft/pull/216))
+
 ## [0.2.0](https://github.com/stormshield/cargo-ft/compare/v0.1.3...v0.2.0) - 2024-10-02
 
 ### Fixed
