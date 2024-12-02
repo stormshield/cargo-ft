@@ -6,6 +6,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.1](https://github.com/stormshield/cargo-ft/compare/v0.2.0...v0.2.1) - 2024-12-02
+
+### Other
+
+- *(deps)* bump clap from 4.5.20 to 4.5.21 ([#223](https://github.com/stormshield/cargo-ft/pull/223))
+- *(deps)* bump anyhow from 1.0.89 to 1.0.93 ([#219](https://github.com/stormshield/cargo-ft/pull/219))
+- *(deps)* bump syn from 2.0.79 to 2.0.87 ([#218](https://github.com/stormshield/cargo-ft/pull/218))
+- *(deps)* bump hashbrown from 0.15.0 to 0.15.1 ([#217](https://github.com/stormshield/cargo-ft/pull/217))
+- *(deps)* bump colorchoice from 1.0.2 to 1.0.3 ([#204](https://github.com/stormshield/cargo-ft/pull/204))
+- *(deps)* bump anstyle-parse from 0.2.5 to 0.2.6 ([#203](https://github.com/stormshield/cargo-ft/pull/203))
+- *(deps)* bump proc-macro2 from 1.0.86 to 1.0.89 ([#202](https://github.com/stormshield/cargo-ft/pull/202))
+- *(deps)* bump anstyle from 1.0.8 to 1.0.10 ([#210](https://github.com/stormshield/cargo-ft/pull/210))
+- *(deps)* bump serde_json from 1.0.128 to 1.0.132 ([#208](https://github.com/stormshield/cargo-ft/pull/208))
+- *(deps)* bump anstyle-query from 1.1.1 to 1.1.2 ([#205](https://github.com/stormshield/cargo-ft/pull/205))
+- *(deps)* bump thiserror from 1.0.64 to 1.0.68 ([#215](https://github.com/stormshield/cargo-ft/pull/215))
+- *(deps)* bump clap from 4.5.19 to 4.5.20 ([#213](https://github.com/stormshield/cargo-ft/pull/213))
+- *(deps)* bump serde from 1.0.210 to 1.0.214 ([#206](https://github.com/stormshield/cargo-ft/pull/206))
+- *(deps)* bump anstream from 0.6.15 to 0.6.18 ([#216](https://github.com/stormshield/cargo-ft/pull/216))
+
 ## [0.2.0](https://github.com/stormshield/cargo-ft/compare/v0.1.3...v0.2.0) - 2024-10-02
 
 ### Fixed
