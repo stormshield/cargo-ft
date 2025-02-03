@@ -6,6 +6,57 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.1](https://github.com/stormshield/cargo-ft/compare/v0.2.0...v0.2.1) - 2025-02-03
+
+### Other
+
+- *(deps)* bump serde_json from 1.0.135 to 1.0.138 (#263)
+- *(deps)* bump clap-cargo from 0.15.1 to 0.15.2 in the cargo-metadata group (#259)
+- *(deps)* bump toml_edit from 0.22.22 to 0.22.23 (#264)
+- *(deps)* bump thiserror from 2.0.9 to 2.0.11 (#261)
+- *(deps)* bump clap from 4.5.24 to 4.5.27 (#266)
+- *(deps)* bump anstyle-wincon from 3.0.6 to 3.0.7 (#268)
+- use new is_some_and method (#272)
+- *(deps)* bump cargo-config2 from 0.1.31 to 0.1.32 (#252)
+- *(deps)* bump syn from 2.0.94 to 2.0.95 (#255)
+- *(deps)* bump winnow from 0.6.21 to 0.6.22 (#251)
+- *(deps)* bump serde_json from 1.0.134 to 1.0.135 (#253)
+- *(deps)* bump clap from 4.5.23 to 4.5.24 (#254)
+- *(deps)* bump the cargo-metadata group with 2 updates (#257)
+- *(deps)* bump quote from 1.0.37 to 1.0.38 (#248)
+- *(deps)* bump serde_json from 1.0.133 to 1.0.134 (#245)
+- *(deps)* bump semver from 1.0.23 to 1.0.24 (#249)
+- *(deps)* bump winnow from 0.6.20 to 0.6.21 (#247)
+- *(deps)* bump syn from 2.0.90 to 2.0.94 (#246)
+- *(deps)* bump anyhow from 1.0.93 to 1.0.95 (#240)
+- *(deps)* bump serde from 1.0.215 to 1.0.217 (#242)
+- *(deps)* bump clap from 4.5.21 to 4.5.23 (#243)
+- *(deps)* bump cargo-config2 from 0.1.29 to 0.1.31 (#241)
+- *(deps)* bump clap_lex from 0.7.2 to 0.7.3 (#235)
+- *(deps)* bump indexmap from 2.6.0 to 2.7.0 (#233)
+- *(deps)* bump cargo-platform from 0.1.8 to 0.1.9 (#231)
+- *(deps)* bump hashbrown from 0.15.1 to 0.15.2 (#230)
+- *(deps)* bump itoa from 1.0.11 to 1.0.14 (#227)
+- *(deps)* bump unicode-ident from 1.0.13 to 1.0.14 (#225)
+- *(deps)* bump serde_json from 1.0.132 to 1.0.133 (#229)
+- *(deps)* bump syn from 2.0.87 to 2.0.90 (#234)
+- *(deps)* bump thiserror from 1.0.66 to 1.0.69 (#226)
+- *(deps)* bump serde from 1.0.214 to 1.0.215 (#224)
+- *(deps)* bump clap from 4.5.20 to 4.5.21 (#223)
+- *(deps)* bump anyhow from 1.0.89 to 1.0.93 (#219)
+- *(deps)* bump syn from 2.0.79 to 2.0.87 (#218)
+- *(deps)* bump hashbrown from 0.15.0 to 0.15.1 (#217)
+- *(deps)* bump colorchoice from 1.0.2 to 1.0.3 (#204)
+- *(deps)* bump anstyle-parse from 0.2.5 to 0.2.6 (#203)
+- *(deps)* bump proc-macro2 from 1.0.86 to 1.0.89 (#202)
+- *(deps)* bump anstyle from 1.0.8 to 1.0.10 (#210)
+- *(deps)* bump serde_json from 1.0.128 to 1.0.132 (#208)
+- *(deps)* bump anstyle-query from 1.1.1 to 1.1.2 (#205)
+- *(deps)* bump thiserror from 1.0.64 to 1.0.68 (#215)
+- *(deps)* bump clap from 4.5.19 to 4.5.20 (#213)
+- *(deps)* bump serde from 1.0.210 to 1.0.214 (#206)
+- *(deps)* bump anstream from 0.6.15 to 0.6.18 (#216)
+
 ## [0.2.0](https://github.com/stormshield/cargo-ft/compare/v0.1.3...v0.2.0) - 2024-10-02
 
 ### Fixed
