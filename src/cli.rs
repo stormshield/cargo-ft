@@ -39,7 +39,7 @@ impl Cli {
 
     fn from_cargo_cli(CargoCli::Ft(FtCli::External(args)): CargoCli) -> Self {
         // args[0] is the subcommand, so the first argument is args[1]
-        let start_with_double_dash = args.get(1).map_or(false, |arg| arg == "--");
+        let start_with_double_dash = args.get(1).is_some_and(|arg| arg == "--");
 
         let command = Command::parse_from(args);
 
@@ -204,5 +204,5 @@ struct CommandArgs {
 }
 
 fn is_flag_and_value(arg: &str, known_args: &HashMap<String, bool>) -> bool {
-    arg.split_once('=').map_or(false, |(prefix, _)| known_args.contains_key(prefix))
+    arg.split_once('=').is_some_and(|(prefix, _)| known_args.contains_key(prefix))
 }
