@@ -95,9 +95,7 @@ fn main() -> Result<ExitCode, RuntimeError> {
         ))
     );
 
-    let selected_is_explicit = !ft_args.workspace.package.is_empty()
-        || !ft_args.workspace.exclude.is_empty()
-        || selected.len() == 1;
+    let selected_is_explicit = !ft_args.workspace.package.is_empty() || selected.len() == 1;
 
     ensure!(
         !selected_is_explicit || selected_unsupported.is_empty(),
