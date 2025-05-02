@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.1](https://github.com/stormshield/cargo-ft/compare/v0.3.0...v0.3.1) - 2025-05-02
+
+### Other
+
+- *(deps)* bump indexmap from 2.8.0 to 2.9.0 ([#314](https://github.com/stormshield/cargo-ft/pull/314))
+- *(deps)* bump proc-macro2 from 1.0.93 to 1.0.95 ([#311](https://github.com/stormshield/cargo-ft/pull/311))
+- *(deps)* bump anyhow from 1.0.95 to 1.0.98 ([#309](https://github.com/stormshield/cargo-ft/pull/309))
+- *(deps)* bump syn from 2.0.98 to 2.0.101 ([#307](https://github.com/stormshield/cargo-ft/pull/307))
+- *(deps)* bump hashbrown from 0.15.2 to 0.15.3 ([#306](https://github.com/stormshield/cargo-ft/pull/306))
+- *(deps)* bump clap from 4.5.35 to 4.5.37 ([#313](https://github.com/stormshield/cargo-ft/pull/313))
+
 ## [0.3.0](https://github.com/stormshield/cargo-ft/compare/v0.2.0...v0.3.0) - 2025-04-18
 
 ### Fixed
