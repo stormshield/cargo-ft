@@ -3,12 +3,12 @@ name = "cargo-ft"
 version = "0.3.0"
 authors = ["Guillaume Dallenne <guillaume.dallenne@stormshield.eu>"]
 categories = ["command-line-utilities", "development-tools::cargo-plugins"]
-edition = "2021"
+edition = "2024"
 include = ["/src/", "/build.rs", "/LICENSE", "/NOTICE"]
 keywords = ["cli", "cargo", "filter", "target"]
 license = "Apache-2.0"
 repository = "https://github.com/stormshield/cargo-ft"
-rust-version = "1.81" # Sync this value with the CI workflow
+rust-version = "1.87" # Sync this value with the CI workflow
 description = "A cargo extension for specifying supported targets for a crate"
 
 [dependencies]
@@ -66,7 +66,6 @@ manual_ok_or = "warn"
 map_err_ignore = "warn"
 map_flatten = "warn"
 map_unwrap_or = "warn"
-match_on_vec_items = "warn"
 match_same_arms = "warn"
 match_wild_err_arm = "warn"
 match_wildcard_for_single_variants = "warn"
