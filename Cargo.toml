@@ -13,7 +13,7 @@ description = "A cargo extension for specifying supported targets for a crate"
 
 [dependencies]
 anstream = "0.6.19"
-anstyle = "1.0.10"
+anstyle = "1.0.11"
 cargo-config2 = "0.1.34"
 cargo_metadata = "0.19.2"
 clap = { version = "4.5.40", features = ["derive"] }
