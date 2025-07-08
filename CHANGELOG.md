@@ -6,6 +6,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0](https://github.com/stormshield/cargo-ft/compare/v0.3.0...v0.4.0) - 2025-07-08
+
+### Other
+
+- *(deps)* bump indexmap from 2.9.0 to 2.10.0 ([#329](https://github.com/stormshield/cargo-ft/pull/329))
+- *(deps)* bump syn from 2.0.101 to 2.0.104 ([#338](https://github.com/stormshield/cargo-ft/pull/338))
+- *(deps)* bump hashbrown from 0.15.3 to 0.15.4 ([#337](https://github.com/stormshield/cargo-ft/pull/337))
+- *(deps)* bump anstyle-query from 1.1.2 to 1.1.3 ([#336](https://github.com/stormshield/cargo-ft/pull/336))
+- *(deps)* bump anstyle-parse from 0.2.6 to 0.2.7 ([#335](https://github.com/stormshield/cargo-ft/pull/335))
+- *(deps)* bump camino from 1.1.9 to 1.1.10 ([#333](https://github.com/stormshield/cargo-ft/pull/333))
+- *(deps)* bump memchr from 2.7.4 to 2.7.5 ([#331](https://github.com/stormshield/cargo-ft/pull/331))
+- *(deps)* bump clap_lex from 0.7.4 to 0.7.5 ([#330](https://github.com/stormshield/cargo-ft/pull/330))
+- *(deps)* bump anstyle-wincon from 3.0.8 to 3.0.9 ([#326](https://github.com/stormshield/cargo-ft/pull/326))
+- *(deps)* bump anstyle from 1.0.10 to 1.0.11 ([#327](https://github.com/stormshield/cargo-ft/pull/327))
+- *(deps)* bump anstream from 0.6.18 to 0.6.19 ([#321](https://github.com/stormshield/cargo-ft/pull/321))
+- *(deps)* bump toml_edit from 0.22.26 to 0.22.27 ([#322](https://github.com/stormshield/cargo-ft/pull/322))
+- *(deps)* bump clap from 4.5.39 to 4.5.40 ([#325](https://github.com/stormshield/cargo-ft/pull/325))
+- *(deps)* bump cargo-config2 from 0.1.32 to 0.1.34 ([#323](https://github.com/stormshield/cargo-ft/pull/323))
+- [**breaking**] bump MSRV from 1.81 to 1.87 ([#320](https://github.com/stormshield/cargo-ft/pull/320))
+- *(deps)* bump winnow from 0.7.8 to 0.7.10 ([#319](https://github.com/stormshield/cargo-ft/pull/319))
+- *(deps)* bump clap from 4.5.37 to 4.5.39 ([#318](https://github.com/stormshield/cargo-ft/pull/318))
+- *(deps)* bump anstyle-wincon from 3.0.7 to 3.0.8 ([#317](https://github.com/stormshield/cargo-ft/pull/317))
+- *(deps)* bump indexmap from 2.8.0 to 2.9.0 ([#314](https://github.com/stormshield/cargo-ft/pull/314))
+- *(deps)* bump proc-macro2 from 1.0.93 to 1.0.95 ([#311](https://github.com/stormshield/cargo-ft/pull/311))
+- *(deps)* bump anyhow from 1.0.95 to 1.0.98 ([#309](https://github.com/stormshield/cargo-ft/pull/309))
+- *(deps)* bump syn from 2.0.98 to 2.0.101 ([#307](https://github.com/stormshield/cargo-ft/pull/307))
+- *(deps)* bump hashbrown from 0.15.2 to 0.15.3 ([#306](https://github.com/stormshield/cargo-ft/pull/306))
+- *(deps)* bump clap from 4.5.35 to 4.5.37 ([#313](https://github.com/stormshield/cargo-ft/pull/313))
+
 ## [0.3.0](https://github.com/stormshield/cargo-ft/compare/v0.2.0...v0.3.0) - 2025-04-18
 
 ### Fixed
