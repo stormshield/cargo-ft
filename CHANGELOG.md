@@ -1,4 +1,56 @@
 # Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [0.4.0](https://github.com/stormshield/cargo-ft/compare/v0.3.0...v0.4.0) - 2025-09-02
+
+### Other
+
+- *(deps)* bump winnow from 0.7.12 to 0.7.13 ([#356](https://github.com/stormshield/cargo-ft/pull/356))
+- *(deps)* bump proc-macro2 from 1.0.95 to 1.0.101 ([#353](https://github.com/stormshield/cargo-ft/pull/353))
+- *(deps)* bump clap from 4.5.42 to 4.5.46 ([#360](https://github.com/stormshield/cargo-ft/pull/360))
+- *(deps)* bump hashbrown from 0.15.4 to 0.15.5 ([#348](https://github.com/stormshield/cargo-ft/pull/348))
+- *(deps)* bump potential_utf from 0.1.2 to 0.1.3 ([#349](https://github.com/stormshield/cargo-ft/pull/349))
+- *(deps)* bump anstyle-query from 1.1.3 to 1.1.4 ([#354](https://github.com/stormshield/cargo-ft/pull/354))
+- *(deps)* bump serde_json from 1.0.142 to 1.0.143 ([#352](https://github.com/stormshield/cargo-ft/pull/352))
+- *(deps)* bump url from 2.5.4 to 2.5.7 ([#358](https://github.com/stormshield/cargo-ft/pull/358))
+- *(deps)* bump the cargo-metadata group with 2 updates ([#357](https://github.com/stormshield/cargo-ft/pull/357))
+- *(deps)* bump serde_json from 1.0.138 to 1.0.142 ([#345](https://github.com/stormshield/cargo-ft/pull/345))
+- *(deps)* bump clap from 4.5.40 to 4.5.42 ([#346](https://github.com/stormshield/cargo-ft/pull/346))
+- *(deps)* bump winnow from 0.7.11 to 0.7.12 ([#342](https://github.com/stormshield/cargo-ft/pull/342))
+- *(deps)* bump the cargo-metadata group across 1 directory with 2 updates ([#343](https://github.com/stormshield/cargo-ft/pull/343))
+- *(deps)* bump winnow from 0.7.10 to 0.7.11 ([#332](https://github.com/stormshield/cargo-ft/pull/332))
+- *(deps)* bump colorchoice from 1.0.3 to 1.0.4 ([#334](https://github.com/stormshield/cargo-ft/pull/334))
+- *(deps)* bump indexmap from 2.9.0 to 2.10.0 ([#329](https://github.com/stormshield/cargo-ft/pull/329))
+- *(deps)* bump syn from 2.0.101 to 2.0.104 ([#338](https://github.com/stormshield/cargo-ft/pull/338))
+- *(deps)* bump hashbrown from 0.15.3 to 0.15.4 ([#337](https://github.com/stormshield/cargo-ft/pull/337))
+- *(deps)* bump anstyle-query from 1.1.2 to 1.1.3 ([#336](https://github.com/stormshield/cargo-ft/pull/336))
+- *(deps)* bump anstyle-parse from 0.2.6 to 0.2.7 ([#335](https://github.com/stormshield/cargo-ft/pull/335))
+- *(deps)* bump camino from 1.1.9 to 1.1.10 ([#333](https://github.com/stormshield/cargo-ft/pull/333))
+- *(deps)* bump memchr from 2.7.4 to 2.7.5 ([#331](https://github.com/stormshield/cargo-ft/pull/331))
+- *(deps)* bump clap_lex from 0.7.4 to 0.7.5 ([#330](https://github.com/stormshield/cargo-ft/pull/330))
+- *(deps)* bump anstyle-wincon from 3.0.8 to 3.0.9 ([#326](https://github.com/stormshield/cargo-ft/pull/326))
+- *(deps)* bump anstyle from 1.0.10 to 1.0.11 ([#327](https://github.com/stormshield/cargo-ft/pull/327))
+- *(deps)* bump anstream from 0.6.18 to 0.6.19 ([#321](https://github.com/stormshield/cargo-ft/pull/321))
+- *(deps)* bump toml_edit from 0.22.26 to 0.22.27 ([#322](https://github.com/stormshield/cargo-ft/pull/322))
+- *(deps)* bump clap from 4.5.39 to 4.5.40 ([#325](https://github.com/stormshield/cargo-ft/pull/325))
+- *(deps)* bump cargo-config2 from 0.1.32 to 0.1.34 ([#323](https://github.com/stormshield/cargo-ft/pull/323))
+- [**breaking**] bump MSRV from 1.81 to 1.87 ([#320](https://github.com/stormshield/cargo-ft/pull/320))
+- *(deps)* bump winnow from 0.7.8 to 0.7.10 ([#319](https://github.com/stormshield/cargo-ft/pull/319))
+- *(deps)* bump clap from 4.5.37 to 4.5.39 ([#318](https://github.com/stormshield/cargo-ft/pull/318))
+- *(deps)* bump anstyle-wincon from 3.0.7 to 3.0.8 ([#317](https://github.com/stormshield/cargo-ft/pull/317))
+- *(deps)* bump indexmap from 2.8.0 to 2.9.0 ([#314](https://github.com/stormshield/cargo-ft/pull/314))
+- *(deps)* bump proc-macro2 from 1.0.93 to 1.0.95 ([#311](https://github.com/stormshield/cargo-ft/pull/311))
+- *(deps)* bump anyhow from 1.0.95 to 1.0.98 ([#309](https://github.com/stormshield/cargo-ft/pull/309))
+- *(deps)* bump syn from 2.0.98 to 2.0.101 ([#307](https://github.com/stormshield/cargo-ft/pull/307))
+- *(deps)* bump hashbrown from 0.15.2 to 0.15.3 ([#306](https://github.com/stormshield/cargo-ft/pull/306))
+- *(deps)* bump clap from 4.5.35 to 4.5.37 ([#313](https://github.com/stormshield/cargo-ft/pull/313))
+# Changelog
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
