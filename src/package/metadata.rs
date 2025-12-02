@@ -1,13 +1,14 @@
+use std::error::Error;
 use std::fmt;
 
-use error_stack::{Context, ResultExt, report};
+use error_stack::{IntoReport, Report, ResultExt};
 use serde::de::{MapAccess, SeqAccess};
 use serde::{Deserialize, Deserializer, de};
 
 #[cfg(test)]
 mod tests;
 
-type MetadataResult<T> = error_stack::Result<T, ParseMetadataError>;
+type MetadataResult<T> = Result<T, Report<ParseMetadataError>>;
 
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash)]
 pub enum ParseMetadataError {
@@ -24,7 +25,7 @@ impl fmt::Display for ParseMetadataError {
     }
 }
 
-impl Context for ParseMetadataError {}
+impl Error for ParseMetadataError {}
 
 #[derive(Debug, Clone, Eq, PartialEq, Hash, Default)]
 pub struct FtWorkspaceMetadata {
@@ -56,17 +57,17 @@ impl FtMetadata {
             serde_json::from_value::<Option<JsonPackageMetadata>>(package_metadata)
                 .change_context(ParseMetadataError::Invalid)?
                 .ok_or(ParseMetadataError::Missing)
-                .attach_printable("no `package.metadata` table")?;
+                .attach("no `package.metadata` table")?;
 
         let ft = package_metadata
             .ft
             .ok_or(ParseMetadataError::Missing)
-            .attach_printable("no `package.metadata.ft` table")?;
+            .attach("no `package.metadata.ft` table")?;
 
         let targets = ft
             .targets
             .ok_or(ParseMetadataError::Missing)
-            .attach_printable("no `package.metadata.ft.targets` array")?
+            .attach("no `package.metadata.ft.targets` array")?
             .resolve("targets", || workspace_metadata.fields.targets())?;
 
         Ok(Self { targets })
@@ -95,8 +96,8 @@ impl InheritableFields {
         self.targets
             .as_ref()
             .cloned()
-            .ok_or(report!(ParseMetadataError::Invalid))
-            .attach_printable("`workspace.metadata.ft.targets` was not defined")
+            .ok_or(ParseMetadataError::Invalid.into_report())
+            .attach("`workspace.metadata.ft.targets` was not defined")
     }
 }
 
@@ -169,7 +170,7 @@ impl<T> MaybeWorkspace<T> {
     ) -> MetadataResult<T> {
         match self {
             Self::Defined(value) => Ok(value),
-            Self::Workspace => get_workspace_inheritable().attach_printable_lazy(|| format!("error inheriting `{label}` from workspace root manifest's `workspace.metadata.ft.{label}`")),
+            Self::Workspace => get_workspace_inheritable().attach_with(|| format!("error inheriting `{label}` from workspace root manifest's `workspace.metadata.ft.{label}`")),
         }
     }
 }
