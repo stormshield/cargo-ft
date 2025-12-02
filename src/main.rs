@@ -1,11 +1,12 @@
 use std::borrow::Borrow;
+use std::error::Error;
 use std::ffi::OsString;
 use std::path::Path;
 use std::process::{Command, ExitCode};
 use std::{env, fmt, path};
 
 use anstream::eprintln;
-use error_stack::{Context, Result, ResultExt, ensure, report};
+use error_stack::{IntoReport, Report, ResultExt, ensure};
 
 use crate::cli::Cli;
 use crate::color::{note, warn};
@@ -27,9 +28,9 @@ impl fmt::Display for RuntimeError {
     }
 }
 
-impl Context for RuntimeError {}
+impl Error for RuntimeError {}
 
-fn main() -> Result<ExitCode, RuntimeError> {
+fn main() -> Result<ExitCode, Report<RuntimeError>> {
     setup();
 
     let Cli { cargo_cmd, ft_args, cargo_args } = Cli::parse();
@@ -37,18 +38,18 @@ fn main() -> Result<ExitCode, RuntimeError> {
 
     let config = cargo_config2::Config::load()
         .change_context(context)
-        .attach_printable("could not load cargo configuration")?;
+        .attach("could not load cargo configuration")?;
 
     let mut targets = config
         .build_target_for_cli(&ft_args.target)
         .change_context(context)
-        .attach_printable("could not select target triple")?;
+        .attach("could not select target triple")?;
 
     let target = targets.pop();
     let build_target = target.as_deref().unwrap_or(env!("TARGET_PLATFORM"));
     ensure!(
         targets.is_empty(),
-        report!(context).attach_printable("multi-target build is not supported")
+        context.into_report().attach("multi-target build is not supported")
     );
 
     let manifest_options = [
@@ -68,7 +69,7 @@ fn main() -> Result<ExitCode, RuntimeError> {
         .verbose(true)
         .exec()
         .change_context(context)
-        .attach_printable_lazy(|| {
+        .attach_with(|| {
             format!(
                 "could not run initial cargo metadata on {}",
                 manifest_path_display(ft_args.manifest.manifest_path.as_deref())
@@ -89,7 +90,7 @@ fn main() -> Result<ExitCode, RuntimeError> {
 
     ensure!(
         !selected_supported.is_empty(),
-        report!(context).attach_printable(format!(
+        context.into_report().attach(format!(
             "all selected packages {:?} are unsupported on {build_target}",
             package_names(&selected)
         ))
@@ -99,7 +100,7 @@ fn main() -> Result<ExitCode, RuntimeError> {
 
     ensure!(
         !selected_is_explicit || selected_unsupported.is_empty(),
-        report!(context).attach_printable(format!(
+        context.into_report().attach(format!(
             "selected packages {:?} are unsupported on {build_target}",
             package_names(&selected_unsupported)
         ))
@@ -126,7 +127,7 @@ fn main() -> Result<ExitCode, RuntimeError> {
     let status = command
         .status()
         .change_context(context)
-        .attach_printable_lazy(|| format!("could not run {command:?}"))?;
+        .attach_with(|| format!("could not run {command:?}"))?;
 
     Ok(status.code().map_or(ExitCode::FAILURE, |code| ExitCode::from(code as u8)))
 }

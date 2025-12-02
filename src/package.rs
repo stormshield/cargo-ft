@@ -1,8 +1,9 @@
+use std::error::Error;
 use std::fmt;
 
 use anstream::eprintln;
 use cargo_metadata::{Metadata, Package};
-use error_stack::{Context, Result, ResultExt};
+use error_stack::{Report, ResultExt};
 
 use crate::color::warn;
 use crate::package::metadata::{FtWorkspaceMetadata, ParseMetadataError};
@@ -28,7 +29,7 @@ impl fmt::Display for PackageMetadataError {
     }
 }
 
-impl Context for PackageMetadataError {}
+impl Error for PackageMetadataError {}
 
 #[derive(Debug, Clone, Eq, PartialEq)]
 pub struct FtPackage<'p> {
@@ -40,7 +41,7 @@ impl<'p> FtPackage<'p> {
     pub fn parse_metadata(
         metadata: &Metadata,
         packages: &[&'p Package],
-    ) -> Result<Vec<Self>, PackageMetadataError> {
+    ) -> Result<Vec<Self>, Report<PackageMetadataError>> {
         let context = PackageMetadataError::from;
 
         let workspace_metadata = FtWorkspaceMetadata::parse(metadata.workspace_metadata.clone())
