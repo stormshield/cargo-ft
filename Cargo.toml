@@ -20,7 +20,7 @@ clap = { version = "4.5.53", features = ["derive"] }
 clap-cargo = { version = "0.18.3", features = ["cargo_metadata"] }
 error-stack = "0.6.0"
 serde = { version = "1.0.217", features = ["derive"] }
-serde_json = "1.0.145"
+serde_json = "1.0.148"
 
 # Embark standard lints v6 for Rust 1.55+
 # for more info see: <https://github.com/EmbarkStudios/rust-ecosystem/issues/59>
