@@ -105,7 +105,7 @@ dependencies = [
 
 [[package]]
 name = "cargo-ft"
-version = "0.3.0"
+version = "0.4.0"
 dependencies = [
  "anstream 1.0.0",
  "anstyle",
